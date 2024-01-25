@@ -158,3 +158,12 @@ tritoninferenceserver-hypha:
     gpuMemoryUtilization: 50
 
   nodeSelector: {}
+  cache:
+    ephemeral:
+      volumeClaimTemplate:
+        spec:
+          accessModes: ["ReadWriteOnce"]
+          # storageClassName: "standard"
+          resources:
+            requests:
+              storage: 8Gi
