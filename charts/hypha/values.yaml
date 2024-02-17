@@ -84,3 +84,10 @@ minio:
   auth:
     rootUser: "minio"
     rootPassword: "minio123"
+
+  # mode: "distributed"
+  # statefulset:
+  #   replicaCount: 4
+
+# tritoninferenceserver:
+#   nameOverride: "tritoninferenceserver"
